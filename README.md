@@ -1,1 +1,4 @@
-# MQTT
+#Comunicación MQTT
+-Broker MQTT: Se elegio configurar un broker MQTT utilizando Node-RED, que se ejecuta en una PC. El broker MQTT actúa como intermediario, permitiendo que los dispositivos publiquen y suscriban datos. Puede estar alojado en una PC, un Raspberry Pi u otros entornos, incluidas plataformas de nube.
+-Publisher: Se utilizo un dispositivo ESP8266 junto con un sensor de temperatura/humedad DHT11. El ESP8266 recopila datos del sensor y los publica en un tema MQTT en el broker. En este casoo, se configuro el ESP8266 como el publisher.
+-Subscriber: El subscriber recibe los datos publicados por el publisher. Puede ser una PC, un Raspberry Pi, un navegador web a través de una página HTML o cualquier otro dispositivo capaz de conectarse al broker MQTT. En esta configuración, se utiliza Node-RED Dashboard en una PC como el subscriber.
